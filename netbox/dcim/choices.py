@@ -804,9 +804,7 @@ class InterfaceTypeChoices(ChoiceSet):
     TYPE_SUMMITSTACK512 = 'extreme-summitstack-512'
     
     # SAS
-    TYPE_MINISASMALE = 'Mini SAS Male'
     TYPE_MINISASFEMALE = 'Mini SAS Female'
-    TYPE_MINISASHDMALE =  'Mini SAS HD Male'
     TYPE_MINISASHDFEMALE = 'Mini SAS HD Female'
     
     # Other
@@ -951,9 +949,7 @@ class InterfaceTypeChoices(ChoiceSet):
         (
             'SAS',
             (
-                (TYPE_MINISASMALE, 'Mini SAS Male'),
                 (TYPE_MINISASFEMALE, 'Mini SAS Female'),
-                (TYPE_MINISASHDMALE,  'Mini SAS HD Male'),
                 (TYPE_MINISASHDFEMALE, 'Mini SAS HD Female'),
             )
         ),
@@ -1126,6 +1122,8 @@ class CableTypeChoices(ChoiceSet):
     TYPE_SMF_OS2 = 'smf-os2'
     TYPE_AOC = 'aoc'
     TYPE_POWER = 'power'
+    TYPE_MINISASMALE = 'Mini SAS Male'
+    TYPE_MINISASHDMALE = 'Mini SAS HD Male'
 
     CHOICES = (
         (
@@ -1156,6 +1154,12 @@ class CableTypeChoices(ChoiceSet):
                 (TYPE_SMF_OS1, 'Singlemode Fiber (OS1)'),
                 (TYPE_SMF_OS2, 'Singlemode Fiber (OS2)'),
                 (TYPE_AOC, 'Active Optical Cabling (AOC)'),
+            ),
+        ),
+        (
+            'SAS',  (
+                (TYPE_MINISASMALE, 'Mini SAS Male'),
+                (TYPE_MINISASHDMALE, 'Mini SAS HD Male'),
             ),
         ),
         (TYPE_POWER, 'Power'),
