@@ -100,6 +100,7 @@ class IPAddressRoleChoices(ChoiceSet):
     ROLE_HSRP = 'hsrp'
     ROLE_GLBP = 'glbp'
     ROLE_CARP = 'carp'
+    ROLE_IPSEC = 'ipsec'
 
     CHOICES = (
         (ROLE_LOOPBACK, 'Loopback'),
@@ -110,6 +111,7 @@ class IPAddressRoleChoices(ChoiceSet):
         (ROLE_HSRP, 'HSRP'),
         (ROLE_GLBP, 'GLBP'),
         (ROLE_CARP, 'CARP'),
+        (ROLE_IPSEC, 'ipsec'),
     )
 
     CSS_CLASSES = {
