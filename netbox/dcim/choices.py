@@ -1121,9 +1121,9 @@ class CableTypeChoices(ChoiceSet):
     TYPE_SMF_OS1 = 'smf-os1'
     TYPE_SMF_OS2 = 'smf-os2'
     TYPE_AOC = 'aoc'
-    TYPE_POWER = 'power'
     TYPE_MINISASMALE = 'Mini SAS Male'
     TYPE_MINISASHDMALE = 'Mini SAS HD Male'
+    TYPE_POWER = 'power'
 
     CHOICES = (
         (
